@@ -5,6 +5,15 @@ A **fullstack application** to estimate and manage working time, built with **No
 This project helps teams manage **tasks, working time estimation, and user roles** with a clear separation of backend and frontend.
 
 ---
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/b714e3dc-ece8-4aa6-b53f-14d8c115e4e9" />
+<img width="1911" height="838" alt="image" src="https://github.com/user-attachments/assets/983dd013-2796-4ee2-87a9-200f784fe532" />
+<img width="1919" height="883" alt="image" src="https://github.com/user-attachments/assets/057f0c8c-fec4-4ca1-889d-9eb15ef6ea56" />
+<img width="1918" height="861" alt="image" src="https://github.com/user-attachments/assets/4971c7e2-e182-4599-ac17-d0695a0e5515" />
+<img width="1767" height="862" alt="image" src="https://github.com/user-attachments/assets/df1cf7cd-4918-4e13-8d85-fdb8be9bdc95" />
+
+
+
+
 
 ## Table of Contents
 - [Overview](#overview)  
