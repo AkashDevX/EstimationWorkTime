@@ -1,58 +1,73 @@
-Estimation Work Time
+🕒 Estimation Work Time
 
-A fullstack application to estimate and manage working time. Built with Node.js, Prisma, React, and SQLite/PostgreSQL (based on your Prisma setup).
+A full-stack application to estimate and manage working time, built with Node.js, Prisma, React, and SQLite/PostgreSQL.
 
-Overview
+📌 Overview
 
-This project helps manage tasks, working time estimation, and user roles. It has two main components:
+This project helps manage tasks, work time estimation, and user roles.
 
-Backend: Node.js server with Prisma ORM for database management.
+It consists of two main components:
 
-Frontend: React application for user interface.
+Backend: Node.js server with Prisma ORM
 
+Frontend: React application for the user interface
 
-Prerequisites
+✨ Features
+
+✅ Task management and tracking
+
+✅ Work time estimation
+
+✅ Role-based access control (PM / Engineer)
+
+✅ Database management with Prisma
+
+✅ Seeded demo data for testing
+
+🛠 Prerequisites
 
 Node.js
+
 Git
-Optional for database viewing: Prisma Studio
 
-Installation
+Optional: Prisma Studio for viewing/editing database
 
-Clone the repository
+⚡ Installation
+
+1. Clone the repository
 git clone https://github.com/AkashDevX/EstimationWorkTime.git
 cd EstimationWorkTime
 
-Install backend dependencies
+2. Install backend dependencies
+Go to the backend folder:
 cd backend
 npm install
 
-Install frontend dependencies
+3. Install frontend dependencies
+Go to the frontend folder:
 cd ../frontend
 npm install
 
-Database Setup
+🗄 Database Setup
 
-Install Prisma CLI (if not installed globally)
+1. Install Prisma CLI (if not installed globally)
 cd backend
 npm install prisma --save-dev
 npm install @prisma/client
 
-Generate Prisma Client
+2. Generate Prisma Client
 npx prisma generate
 
-Run Migrations
+3. Run Migrations
 npx prisma migrate dev --name init
 
-Seed the database
+4. Seed the database
 npm run seed
 
-Optional: Open Prisma Studio to view/edit data
+5. Optional: Open Prisma Studio
 npx prisma studio
 
-
-
-Running the Project
+🚀 Running the Project
 
 Backend
 cd backend
@@ -62,18 +77,6 @@ Frontend
 cd frontend
 npm start
 
-Default Seed Users
-Email	                      Password	Role
-pm@example.com              123456    PM
-engineer1@example.com       123456    ENG
-engineer2@example.com       123456    ENG
-Use these credentials to log in and test the app.
-
-
-Notes
-
-Make sure to create a .env file in the backend folder if your Prisma schema uses environment variables (e.g., DATABASE_URL).
-
-This project uses Prisma ORM; any database changes require running migrations.
-
-Ensure the backend is running before starting the frontend.
+👥 Default Seed Users
+Email	Password	Role
+pm@example.com
