@@ -1,82 +1,125 @@
-🕒 Estimation Work Time
+# Estimation Work Time
 
-A full-stack application to estimate and manage working time, built with Node.js, Prisma, React, and SQLite/PostgreSQL.
+A **fullstack application** to estimate and manage working time, built with **Node.js**, **Prisma**, **React**, and **SQLite/PostgreSQL** (depending on your Prisma setup).  
 
-📌 Overview
+This project helps teams manage **tasks, working time estimation, and user roles** with a clear separation of backend and frontend.
 
-This project helps manage tasks, work time estimation, and user roles.
+---
 
-It consists of two main components:
+## Table of Contents
+- [Overview](#overview)  
+- [Features](#features)  
+- [Prerequisites](#prerequisites)  
+- [Installation & Setup](#installation--setup)  
+- [Configuration](#configuration)  
+- [Examples](#examples)  
+- [Troubleshooting](#troubleshooting)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-Backend: Node.js server with Prisma ORM
+---
 
-Frontend: React application for the user interface
+## Overview
 
-✨ Features
+The project consists of two main components:
 
-✅ Task management and tracking
+- **Backend**: A Node.js server using Prisma ORM for database management.  
+- **Frontend**: A React-based interface for user interaction.  
 
-✅ Work time estimation
+---
 
-✅ Role-based access control (PM / Engineer)
+## Features
 
-✅ Database management with Prisma
+- 🕒 **Task & Time Estimation** – Plan and track working hours.  
+- 👥 **Role-Based Access** – Manage users with roles like **Project Manager (PM)** and **Engineer (ENG)**.  
+- 💾 **Database Flexibility** – Supports **SQLite** (for local dev) or **PostgreSQL** (for production).  
+- 🔍 **Prisma Studio Integration** – Easily view and edit database records.  
+- 🚀 **Fullstack Architecture** – Seamless integration of Node.js backend with React frontend.  
 
-✅ Seeded demo data for testing
+---
 
-🛠 Prerequisites
+## Prerequisites
 
-Node.js
+Make sure you have installed:
 
-Git
+- [Node.js](https://nodejs.org/) (LTS recommended)  
+- [Git](https://git-scm.com/)  
+- **Optional**: [Prisma Studio](https://www.prisma.io/studio) for database inspection  
 
-Optional: Prisma Studio for viewing/editing database
+---
 
-⚡ Installation
+## Installation & Setup
 
-1. Clone the repository
+Follow these steps in order:
+
+```bash
+# 1. Clone the repository
 git clone https://github.com/AkashDevX/EstimationWorkTime.git
 cd EstimationWorkTime
 
-2. Install backend dependencies
-Go to the backend folder:
+# 2. Install backend dependencies
 cd backend
 npm install
 
-3. Install frontend dependencies
-Go to the frontend folder:
+# 3. Install frontend dependencies
 cd ../frontend
 npm install
 
-🗄 Database Setup
+# 4. Go back to the backend for database setup
+cd ../backend
 
-1. Install Prisma CLI (if not installed globally)
-cd backend
+# 5. Install Prisma and client
 npm install prisma --save-dev
 npm install @prisma/client
 
-2. Generate Prisma Client
+# 6. Generate Prisma Client
 npx prisma generate
 
-3. Run Migrations
+# 7. Run database migrations
 npx prisma migrate dev --name init
 
-4. Seed the database
+# 8. Seed the database
 npm run seed
 
-5. Optional: Open Prisma Studio
+# 9. (Optional) Inspect the database with Prisma Studio
 npx prisma studio
 
-🚀 Running the Project
-
-Backend
-cd backend
+# 10. Start the backend server
 node index.js
 
-Frontend
-cd frontend
+# 11. In a new terminal, start the frontend
+cd ../frontend
 npm start
 
-👥 Default Seed Users
-Email	Password	Role
+
+Default Seed Users
+
+Once the app is running, you can log in with these test credentials:
+
 pm@example.com
+	123456	
+engineer1@example.com
+	123456	
+engineer2@example.com
+	123456
+
+#12. Environment Variables
+
+Make sure to create a .env file in the backend folder if your Prisma schema uses environment variables, e.g.:
+DATABASE_URL="file:./dev.db"
+
+
+Notes
+
+This project uses Prisma ORM; any database changes require running migrations.
+
+Ensure the backend is running before starting the frontend.
+
+Recommended database: SQLite for local development, PostgreSQL for production.
+
+Tech Stack
+
+Backend: Node.js, Express, Prisma ORM
+
+Frontend: React.js
+
